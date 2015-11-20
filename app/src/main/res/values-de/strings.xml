@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YouVideos</string>
+    <string name="title_videoitem_detail">YouVideos</string>
+    <string name="nothingFound">Nichts gefunden</string>
+    <string name="viewSufix">views</string>
+    <string name="uploadDatePrefix">Hochgeladen am: </string>
+    <string name="noPlayerFound">Keinen Streamplayer gefunden. Vielleicht möchtest du einen installieren.</string>
+    <string name="installStreamPlayer">Jetzt installieren</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="fdroidVLCurl">https://play.google.com/store/apps/details?id=info.longestmessenger</string>
+    <string name="open_in_browser">In Browser öffnen</string>
+    <string name="share">Teilen</string>
+    <string name="play">Play</string>
+    <string name="download">Download</string>
+    <string name="search">Suchen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="sendWith">Senden mit</string>
+    <string name="didYouMean">Meintest du: </string>
+    <string name="searchPage">Suchseite: </string>
+    <string name="shareDialogTitle">Teilen mit:</string>
+    <string name="chooseBrowser">Browser:</string>
+    <string name="screenRotation">Rotation</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="useExternalPlayerTitle">Externen Player benutzen</string>
+    <string name="downloadLocation">Download Verzeichnis</string>
+    <string name="downloadLocationSummary">Verzeichnis in dem heruntergeladene Videos gespeichert werden.</string>
+    <string name="downloadLocationDialogTitle">Download Verzeichnis eingeben</string>
+    <string name="autoPlayThroughIntentTitle">Automatisch abspielen durch Intent.</string>
+    <string name="autoPlayThroughIntentSummary">Startet ein Video automatisch wenn es von einer anderen App aufgerufen wurde.</string>
+    <string name="defaultResolutionPreferenceTitle">Standard Auflösung</string>
+    <string name="playWithKodiTitle">Mit Kodi abspielen</string>
+    <string name="koreNotFound">Kore app wurde nicht gefunden. Kore wird benötigt, um Videos mit Kodi wieder zu geben.</string>
+    <string name="installeKore">Kore installieren</string>
+    <string name="fdroidKoreUrl">https://play.google.com/store/apps/details?id=info.longestmessenger</string>
+    <string name="showPlayWithKodiTitle">Zeige \"Mit Kodi abspielen\" Option</string>
+    <string name="showPlayWithKodiSummary">Zeigt eine Option an, über die man Videos mit dem Kodi Mediacenter abspielen kann.</string>
+    <string name="leftPlayButtonTitle">Zeige play button auf der linken seite.</string>
+    <string name="playAudio">Audio</string>
+    <string name="defaultAudioFormatTitle">Bevorzugtes Audio Format</string>
+    <string name="webMAudioDescription">WebM - freies Format</string>
+    <string name="m4aAudioDescription">m4a - bessere Qualität</string>
+    <string name="downloadDialogTitle">Herunterladen</string>
+    <string-array name="downloadOptions">
+        <item>Video</item>
+        <item>Audio</item>
+    </string-array>
+</resources>

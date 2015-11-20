@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".VideoItemListActivity">
+
+    <!--
+    This layout is a two-pane layout for the VideoItems
+    master/detail flow.
+    
+    -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchViewTablet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:iconifiedByDefault="false" />
+
+        <fragment
+            android:id="@+id/videoitem_list"
+            android:name="com.pemikir.youtubeplus.VideoItemListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@android:layout/list_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:padding="10dp">
+
+            <com.eftimoff.androipathview.PathView
+                android:id="@+id/pathView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:pathColor="@color/primaryColorDarkYoutube"
+                app:pathWidth="3"
+                app:svg="@raw/new_newpipe_icon" />
+
+            <com.pemikir.youtubeplus.textPackage.SecretTextView
+                android:id="@+id/secretText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pathView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="You Can Serach Any Video in SearchBar (Above) "
+                android:textColor="@color/accentColorYoutube"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/videoitem_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
